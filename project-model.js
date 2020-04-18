@@ -19,9 +19,9 @@ function findRes(){
 
 function findTask(){
   return db('tasks as t')
-    // .join('projects as p', 'p.id', 't.project_id')
-    // .select('t.id', 't.description', 't.notes', 'p.project_name')
-    // .where('t.project_id' = 'p.id')
+    .join('projects as p', 'p.id', '=', 't.project_id')
+    .select('t.id', 't.description', 'p.project_name', 'p.description')
+    // .where('t.project_id', 'p.id')
 }
 
 function add(project) {
