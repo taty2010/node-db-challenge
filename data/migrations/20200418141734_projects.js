@@ -5,7 +5,7 @@ exports.up = function(knex) {
       .createTable('projects', tbl => {
         tbl.increments();
         tbl.string('project_name', 128).notNullable();
-        tbl.string('description', 255);
+        tbl.string('proj_description', 255);
         tbl.boolean('completed').notNullable().defaultTo(false);
       })
       .createTable('resources', tbl => {
