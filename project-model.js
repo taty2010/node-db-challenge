@@ -4,6 +4,7 @@ module.exports = {
   find,
   findRes,
   findTask,
+  findFull,
   add,
   addRes,
   addTask,
@@ -22,6 +23,10 @@ function findTask(){
     .join('projects as p', 'p.id', '=', 't.project_id')
     .select('t.id', 't.description', 't.notes', 't.completed', 'p.project_name', 'p.proj_description')
     // .where('t.project_id', 'p.id')
+}
+
+function findFull(){
+  return db('full_project')
 }
 
 function add(project) {
