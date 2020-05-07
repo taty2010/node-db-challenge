@@ -40,11 +40,18 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 - [ ] Explain the difference between `Relational Databases` and `SQL`.
 
+  Relation Databases sore data in a way similar to a spreadsheet while SQL is the language used to create the relational database
+
 - [ ] Why do tables need a `primary key`?
 
+A primary key allows for you to refernece the data entry easily as well as needing it for the creation of Foreign Keys.
+
 - [ ] What is the name given to a table column that references the primary key on another table.
+  ForeignKey
 
 - [ ] What do we need in order to have a _many to many_ relationship between two tables.
+
+You would need a intermediary table
 
 ## Minimum Viable Product
 
@@ -64,9 +71,9 @@ Complete the following tasks:
   - [ ] for `projects` and `tasks` if no value is provided for the `completed` property, the API should provide a default value of `false`.
 - [ ] Build an API with endpoints for:
   - [ ] adding resources.
-  - [ ] retrieving a list of resources.
+  - [ X] retrieving a list of resources.
   - [ ] adding projects.
-  - [ ] retrieving a list of projects.
+  - [X ] retrieving a list of projects.
   - [ ] adding tasks.
   - [ ] retrieving a list of tasks. **The list of tasks should include the project name and project description**.
 
